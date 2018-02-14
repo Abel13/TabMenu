@@ -1,0 +1,42 @@
+﻿<Window x:Class="TabMenu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TabMenu"
+        mc:Ignorable="d" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <StackPanel Background="WhiteSmoke">
+        <Grid Height="40">
+            <StackPanel HorizontalAlignment="Left" Margin="20 0">
+                <ComboBox FontSize="15" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
+                    <ComboBoxItem Content="EN"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                <Button Content="FAQ" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="CONTACT" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="ORDER STATUS" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="MY ACCOUNT" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                    <materialDesign:PackIcon Kind="Power" Foreground="#FFA2A2A2" Width="25" Height="25" />
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Height="100">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+                <Button Uid="0" Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
+                <Button Uid="1" Width="150" Content="SHOP" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
+                <Button Uid="2" Width="150" Content="BLOG" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
+                <Button Uid="3" Width="150" Content="PAGES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
+                <Button Uid="4" Width="150" Content="PRODUCTS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
+                <Button Uid="5" Width="150" Content="BRANDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
+                <Button Uid="6" Width="150" Content="GIFT CARDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
+            </StackPanel>
+            <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FF2196F3" HorizontalAlignment="Left" Margin="10 0"/>
+        </Grid>
+        <Grid x:Name="GridMain" Height="460" Background="Aquamarine">
+            
+        </Grid>
+    </StackPanel>
+</Window>
